@@ -3,7 +3,8 @@ class Latihan1 extends CI_Controller
 {
     public function index()
     {
-        echo "Perkenalkan nama Saya Dzul Faqor Bimo Arijanto";
+        echo "tambahkan fungsi penjumlahan/perkalian yang tersedia ";
+        echo "contoh : localhost/pustaka-booking/Latihan1/penjumlahan/2/6";
     }
 
     public function penjumlahan($n1, $n2)
