@@ -126,12 +126,19 @@ class Autentifikasi extends CI_Controller
                 'image' => 'default.jpg',
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
                 'role_id' => 2,
-                'is_active' => 0,
+                'is_active' => 1,
                 'tanggal_input' => time()
             ];
             $this->ModelUser->simpanData($data); // menggunakan model
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Selamat!! akun member anda sudah dibuat. Silahkan Aktivasi Akun anda</div>');
             redirect('autentifikasi');
         }
+    }
+
+    public function logout()
+    {
+        $item = array('email', 'role_id');
+        $this->session->unset_userdata($item);
+        redirect('autentifikasi');
     }
 }
