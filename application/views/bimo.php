@@ -33,6 +33,10 @@
             <td>5</td>
             <td><a href="<?= base_url('Dilemas'); ?>">Di-Lemas</a></td>
         </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="<?= base_url('Autentifikasi'); ?>">Autentifikasi</a></td>
+        </tr>
     </table>
 </body>
 
