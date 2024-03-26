@@ -12,7 +12,7 @@
 
 
             <!-- KOnten -->
-            <form action="<?= base_url('buku/ubahBuku'); ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= base_url('buku/ubahbuku'); ?>" method="post" enctype="multipart/form-data">
                 <div class='row'>
                     <div class="col-sm-3">
                         <img src="<?= base_url('assets/img/upload/') . $buku['image']; ?>" class="img-thumbnail" alt="">

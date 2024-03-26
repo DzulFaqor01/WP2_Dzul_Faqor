@@ -9,9 +9,7 @@
                 </div>
             <?php } ?>
             <?= $this->session->flashdata('pesan'); ?>
-            <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#bukuBaruModal">
-                <i class="fas fa-file-alt"></i> Buku Baru
-            </a>
+            <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#bukuBaruModal"><i class="fas fa-file-alt"></i> Buku Baru</a>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -49,12 +47,8 @@
                                 </picture>
                             </td>
                             <td>
-                                <a href="<?= base_url('buku/ubahBuku/') . $b['id']; ?>" class="badge badge-info">
-                                    <i class="fas fa-edit"></i> Ubah
-                                </a>
-                                <a href="<?= base_url('buku/hapusbuku/') . $b['id']; ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $judul . ' ' . $b['judul_buku']; ?> ?');" class="badge badge-danger">
-                                    <i class="fas fa-trash"></i> Hapus
-                                </a>
+                                <a href="<?= base_url('buku/ubahBuku/') . $b['id']; ?>" class="badge badge-info"><i class="fas fa-edit"></i> Ubah</a>
+                                <a href="<?= base_url('buku/hapusbuku/') . $b['id']; ?>" onclick="return confirm('Kamu yakin akan menghapus <?= $judul . ' ' . $b['judul_buku']; ?> ?');" class="badge badge-danger"><i class="fas fa-trash"></i> Hapus</a>
                             </td>
                         </tr>
                     <?php } ?>
@@ -64,10 +58,9 @@
     </div>
 </div>
 <!-- /.container-fluid -->
-
+</div>
 <!-- End of Main Content -->
-
-<!-- Modal Tambah buku baru -->
+<!-- Modal Tambah buku baru-->
 <div class="modal fade" id="bukuBaruModal" tabindex="-1" role="dialog" aria-labelledby="bukuBaruModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -115,11 +108,11 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-ban"></i> Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-ban"></i>Close</button>
                     <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
-<!-- End of Modal Tambah Buku -->
+<!-- End of Modal Tambah Mneu -->
