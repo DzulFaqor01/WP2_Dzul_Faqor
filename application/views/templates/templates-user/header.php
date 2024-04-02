@@ -27,8 +27,8 @@
                         <a class="nav-item nav-link" href="#">Booking Buku</a>
                         <a class="nav-item nav-link" href="<?= base_url('member/myprofil'); ?>">Profil Saya</a>
                         <a class="nav-item nav-link" href="<?= base_url('member/logout'); ?>"><i class="fas fw falogin"></i> Log out</a><?php } else { ?>
-                        <a class="nav-item nav-link" data-toggle="modal" datatarget="#daftarModal" href="#"><i class="fas fw fa-login"></i> Daftar</a>
-                        <a class="nav-item nav-link" data-toggle="modal" datatarget="#loginModal" href="#"><i class="fas fw fa-login"></i> Log in</a>
+                        <a class="nav-item nav-link" data-toggle="modal" datatarget="#daftarModal" href="#daftarModal"><i class="fas fw fa-login"></i> Daftar</a>
+                        <a class="nav-item nav-link" data-toggle="modal" datatarget="#loginModal" href="#loginModal"><i class="fas fw fa-login"></i> Log in</a>
                     <?php } ?>
                     <span class="nav-item nav-link navright" style="display:block; marginleft:20px;">Selamat Datang <b><?= $user; ?></b></span>
                 </div>
