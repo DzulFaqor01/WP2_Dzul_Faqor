@@ -25,7 +25,7 @@
                                     }
                                     ?>
                                     <a class="btn btn-outline-warning fas fa-search" href="<?php echo html_escape(base_url('home/detailBuku/' . $buku->id)); ?>"> Detail</a>
-
+                                </p>
                             </div>
                         </div>
                     </div> <?php } ?>
