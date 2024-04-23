@@ -117,7 +117,7 @@ class Booking extends CI_Controller
         $isibooking = [
             'id_booking' => $this->ModelBooking->kodeOtomatis('booking', 'id_booking'),
             'tgl_booking' => date('Y-m-d H:m:s'),
-            'batas_ambil' => date('Y-m-d', strtotime('+1 days', strtotime($tglsekarang))),
+            'batas_ambil' => date('Y-m-d', strtotime('+2 days', strtotime($tglsekarang))),
             'id_user' => $where
         ];
         //menyimpan ke tabel booking dan detail booking, dan mengosongkan tabel temporari

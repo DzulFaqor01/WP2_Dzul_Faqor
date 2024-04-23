@@ -20,8 +20,7 @@
                                 <tr>
                                     <td><?= $no; ?></td>
                                     <td>
-                                        <img src="<?= base_url('assets/img/upload
-/' . $t['image']); ?>" class="rounded" alt="No Picture" width="10%">
+                                        <img src="<?= base_url('assets/img/upload/' . $t['image']); ?>" class="rounded" alt="No Picture" width="10%">
                                     </td>
                                     <td nowrap><?= $t['penulis']; ?></td>
                                     <td nowrap><?= $t['penerbit']; ?></td>
