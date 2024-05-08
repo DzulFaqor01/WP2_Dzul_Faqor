@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2024 at 11:56 AM
+-- Generation Time: May 08, 2024 at 12:24 PM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,13 +34,6 @@ CREATE TABLE `booking` (
   `id_user` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `booking`
---
-
-INSERT INTO `booking` (`id_booking`, `tgl_booking`, `batas_ambil`, `id_user`) VALUES
-('08052024001', '2024-05-08', '2024-05-10', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -52,13 +45,6 @@ CREATE TABLE `booking_detail` (
   `id_booking` varchar(12) NOT NULL,
   `id_buku` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `booking_detail`
---
-
-INSERT INTO `booking_detail` (`id`, `id_booking`, `id_buku`) VALUES
-(0, '08052024001', 32);
 
 -- --------------------------------------------------------
 
@@ -85,7 +71,7 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`id`, `judul_buku`, `id_kategori`, `pengarang`, `penerbit`, `tahun_terbit`, `isbn`, `stok`, `dipinjam`, `dibooking`, `image`) VALUES
-(32, 'Statistika dengan program komputer', 1, 'Ahmad Kholiqul Amin', 'Deep Publish', '2014', '9786022809432', 4, 0, 1, 'img1711616550.jpg'),
+(32, 'Statistika dengan program komputer', 1, 'Ahmad Kholiqul Amin', 'Deep Publish', '2014', '9786022809432', 5, 0, 0, 'img1711616550.jpg'),
 (33, 'Mudah Belajar Komputer untuk Anak', 1, 'Bambang Agus Setiawan', 'Huta Media', '2014', '9786025118500', 4, 0, 0, 'img1711616591.jpg'),
 (34, 'PHP komplet', 1, 'Jubilee', 'Elex Media Komputindo', '2017', '8346753547', 5, 0, 0, 'img1711616658.jpg'),
 (35, 'Detektif Conan Ep 200', 10, 'Okigawa Sasuke', 'Cultura', '2016', '874387583987', 4, 0, 0, 'img1711616716.jpg'),
